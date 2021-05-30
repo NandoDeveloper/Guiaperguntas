@@ -1,0 +1,21 @@
+<%- include ('partials/header.ejs') %>
+    <%- include ('partials/navbar.ejs') %>
+        <body>
+            <div class="container ">
+                <div class="card border-primary mb-3 " id="formulario-pergunta">
+                 <div class="card-header border-primary mb-3 ">
+                    <h3>Realizar pergunta</h3>
+                </div>  
+                <div class="card-body">
+                    <form method="DELETE" action="/delete/<%= pergunta.id %>" >
+                        <label>Título</label>
+                        <input type="text" placeholder="Título" class="form-control  border-primary mb-3 " name="titulo" required><br>
+                        <label>Pergunta</label>
+                        <textarea placeholder="Descreva aqui sua pergunta" class="form-control  border-primary mb-3 " name="descricao" required></textarea> <br>
+                        <button class="btn btn-primary" >Perguntar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+<%- include ('partials/footer.ejs') %>
